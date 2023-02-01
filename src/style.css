@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  background: #121212;
+}

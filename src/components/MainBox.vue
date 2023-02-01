@@ -1,72 +1,74 @@
 <script lang="ts">
+import Links from './Links.vue';
+
 export default {
-  data() {
-    return {
-      mouseX: 0,
-      mouseY: 0
-    }
-  },
-  created() {
-    document.addEventListener("mousemove", this.updateMousePosition);
-
-    this.$nextTick(function () {
-      const contentbox = document.querySelector(".mainbox");
-      if (contentbox) {
-        contentbox.classList.add("fadeInUp");
-      } else {
-        console.error("mainbox not found");
-      }
-
-      setTimeout(() => {
-        const contentbox = document.querySelector(".contentbox");
-        if (contentbox) {
-          contentbox.classList.add("fadeInUp");
-        } else {
-          console.error("contentbox not found");
-        }
-      }, 1500);
-
-      setTimeout(() => {
-        const afterText = document.querySelector(".afterText");
-        if (afterText) {
-          afterText.classList.add("fadeInUp");
-        } else {
-          console.error("afterText not found");
-        }
-      }, 2500);
-    });
-  },
-  beforeDestroy() {
-    document.removeEventListener("mousemove", this.updateMousePosition);
-  },
-  computed: {
-    backgroundPosition() {
-      // only move background around a fixed size of the screen
-      const maxMovement = 100;
-      const x = this.mouseX / window.innerWidth;
-      const y = this.mouseY / window.innerHeight;
-      const xMovement = (x - 0.5) * maxMovement;
-      const yMovement = (y - 0.5) * maxMovement;
-      // subtract 50px to center the background
-      return `${xMovement - 50}px ${yMovement - 50}px`;
+    data() {
+        return {
+            mouseX: 0,
+            mouseY: 0
+        };
     },
-    randomBackgroundInt() {
-      const backgroundPaths = [
-        "/background1.jpg",
-        "/background2.jpg",
-        "/background3.jpg",
-      ];
-
-      const randomInt = Math.floor(Math.random() * backgroundPaths.length);
-      return backgroundPaths[randomInt];
-    }
-  },
-  methods: {
-    updateMousePosition(event) {
-      this.mouseX = event.clientX;
-      this.mouseY = event.clientY;
-    }
-  }
+    created() {
+        document.addEventListener("mousemove", this.updateMousePosition);
+        this.$nextTick(function () {
+            const contentbox = document.querySelector(".mainbox");
+            if (contentbox) {
+                contentbox.classList.add("fadeInUp");
+            }
+            else {
+                console.error("mainbox not found");
+            }
+            setTimeout(() => {
+                const contentbox = document.querySelector(".contentbox");
+                if (contentbox) {
+                    contentbox.classList.add("fadeInUp");
+                }
+                else {
+                    console.error("contentbox not found");
+                }
+            }, 1500);
+            setTimeout(() => {
+                const afterText = document.querySelector(".afterText");
+                if (afterText) {
+                    afterText.classList.add("fadeInUp");
+                }
+                else {
+                    console.error("afterText not found");
+                }
+            }, 2500);
+        });
+    },
+    beforeDestroy() {
+        document.removeEventListener("mousemove", this.updateMousePosition);
+    },
+    computed: {
+        backgroundPosition() {
+            // only move background around a fixed size of the screen
+            const maxMovement = 100;
+            const x = this.mouseX / window.innerWidth;
+            const y = this.mouseY / window.innerHeight;
+            const xMovement = (x - 0.5) * maxMovement;
+            const yMovement = (y - 0.5) * maxMovement;
+            // subtract 50px to center the background
+            return `${xMovement - 50}px ${yMovement - 50}px`;
+        },
+        randomBackgroundInt() {
+            const backgroundPaths = [
+                "/background1.jpg",
+                "/background2.jpg",
+                "/background3.jpg",
+            ];
+            const randomInt = Math.floor(Math.random() * backgroundPaths.length);
+            return backgroundPaths[randomInt];
+        }
+    },
+    methods: {
+        updateMousePosition(event) {
+            this.mouseX = event.clientX;
+            this.mouseY = event.clientY;
+        }
+    },
+    components: { Links }
 }
 </script>
 
@@ -79,10 +81,7 @@ export default {
     }"
   >
     <div class="blurbox">
-      <div class="linksbox">
-        <a href="/work">Work</a>
-        <a href="/about">About</a>
-      </div>
+      <Links />
       <div class="contentbox">
         <p>Hi,</p>
         <p>I'm Zachary</p>
@@ -131,26 +130,6 @@ export default {
     width: 100%;
     /* add blur to background */
     background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  .linksbox {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    color: #ccc;
-    font-size: 2rem;
-    line-height: normal;
-  }
-
-  .linksbox a {
-    margin-left: 20px;
-    color: #ccc;
-    text-decoration: none;
-    transition: color 0.3s ease-out;
-  }
-
-  .linksbox a:hover {
-    color: #fff;
   }
 
   .contentbox {

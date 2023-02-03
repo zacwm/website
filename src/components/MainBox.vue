@@ -136,7 +136,7 @@ export default {
     position: absolute;
     bottom: 30px;
     left: 30px;
-    color: #ccc;
+    color: #fff;
     font-size: 7rem;
     line-height: normal;
     opacity: 0;

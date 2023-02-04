@@ -1,7 +1,6 @@
 <template>
   <div class="socialsbox">
-    <a href="/work">Work</a>
-    <a href="/about">About</a>
+    <font-awesome-icon icon="fa-brands fa-discord" />
   </div>
 </template>
 

@@ -1,5 +1,6 @@
 <script lang="ts">
 import Links from './Links.vue';
+import Socials from './Socials.vue';
 
 export default {
     data() {
@@ -82,6 +83,7 @@ export default {
   >
     <div class="blurbox">
       <Links />
+      <Socials />
       <div class="contentbox">
         <p>Hi,</p>
         <p>I'm Zachary</p>

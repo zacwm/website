@@ -1,0 +1,138 @@
+{
+  "items": [
+    {
+      "title": "Auctioneer",
+      "year": "2023",
+      "featureImage": "/workAssets/auctioneer.png",
+      "technologies": ["Active", "React", "TypeScript", "Vite", "Socket.io", "MongoDB"],
+      "body": "Auctioneer is a React application that allows users to create and join auctions. Developed for the Northside Wizards initially, but open source for anyone to use.",
+      "images": [],
+      "links": {
+        "GitHub": "https://github.com/zacimac/auctioneer"
+      }
+    },
+    {
+      "title": "Data Matrix",
+      "year": "2022-Present",
+      "featureImage": "",
+      "technologies": ["Client", "Active", "React", "TypeScript", "MongoDB", "Express", "Socket.io"],
+      "body": "Data Matrix is a React appliation that allows teams to create and store site data. Closed source, and still in development.",
+      "images": [],
+      "links": {}
+    },
+    {
+      "title": "elybeatmaker",
+      "year": "2023",
+      "featureImage": "/workAssets/elybeatmaker.png",
+      "technologies": ["Client", "React", "TypeScript", "Express"],
+      "body": "A homepage designed for elybeatmaker to have a list of all his socials. Clean and features a Twitch check to show when he is live to pulse the Twitch logo, as well as a redirect manager to create and edit redirects on his domain.",
+      "images": [],
+      "links": {
+        "Website": "https://elybeatmaker.com"
+      }
+    },
+    {
+      "title": "NameMC Utils Discord Bot",
+      "year": "2022-Present",
+      "featureImage": "/workAssets/namemcUtils.png",
+      "technologies": ["Client", "Discord.js", "MongoDB", "Express"],
+      "body": "A utility bot for the official NameMC Discord server, manages tickets, appeals, and more for the staff team.",
+      "images": [],
+      "links": {}
+    },
+    {
+      "title": "Camberwell Road Dental",
+      "year": "2021",
+      "featureImage": "/workAssets/camberwellRoadDental.png",
+      "technologies": ["Client", "React"],
+      "body": "Website for Camberwell Road Dental, a dental practice in Camberwell, Victoria. Features a custom blog post system and a contact form that sends an email to the practice.",
+      "images": [],
+      "links": {
+        "Website": "https://camberwellroaddental.com.au"
+      }
+    },
+    {
+      "title": "warnable",
+      "year": "2020-Present (needs a update...)",
+      "featureImage": "/workAssets/warnable.png",
+      "technologies": ["Active", "Discord.js", "SQL", "MongoDB"],
+      "body": "My most popular open source repository. A Discord point-based warning bot. Easy modular system to add new commands and features. This bot is supposed to be hosted by the user, so there is no public instance.",
+      "images": [],
+      "links": {
+        "GitHub": "https://github.com/zacimac/warnable"
+      }
+    },
+    {
+      "title": "Glitch",
+      "year": "2019-Present (on hold)",
+      "featureImage": "/workAssets/glitch.png",
+      "technologies": ["On hold", "Discord.js", "MongoDB", "TypeScript"],
+      "body": "Formerly \"Hexi\", a OG Discord bot from 2016. Glitch is a entirely new bot, with a new codebase, and new features. Glitch is a moderation, music and utility bot, along with a few fun commands. Glitch is currently on hold, and will be reworked in the future.",
+      "images": [],
+      "links": {}
+    },
+    {
+      "title": "Blue Collar Elite",
+      "year": "2019",
+      "featureImage": "/workAssets/blueCollarElite.png",
+      "technologies": ["Client", "jQuery", "Express", "Node.JS"],
+      "body": "Website for Blue Collar Elite, managed bookings and integrated with PayPal & NAB. Features a custom booking system, and a custom admin panel.",
+      "images": [],
+      "links": {}
+    },
+    {
+      "title": "Neutron",
+      "year": "2018-2019",
+      "featureImage": "/workAssets/neutron.png",
+      "technologies": ["Electron", "jQuery", "Discord.js", "Express"],
+      "body": "A Windows application that allows users to create and manage Discord bots. Features a custom Discord bot manager, and a custom Discord bot creator. Had a global server that allowed users to create and share modules to include in their bot. Also included CLI support to host the bot on a server.",
+      "images": [],
+      "links": {}
+    },
+    {
+      "title": "The Best Local Electrician",
+      "year": "2019",
+      "featureImage": "/workAssets/theBestLocalElectrician.png",
+      "technologies": ["Client", "jQuery", "Express", "Bootstrap"],
+      "body": "Website for The Best Local Electrician, an electrician in Melbourne, Victoria. Included a API for contact form submissions.",
+      "images": [],
+      "links": {}
+    },
+    {
+      "title": "Leveled",
+      "year": "2016-2018",
+      "featureImage": "/workAssets/leveled.png",
+      "technologies": ["Discord.js", "Express", "Socket.io"],
+      "body": "A Discord experience bot that featured around a customizable website profile. This bot was my fastest growing bot, but was shut down due to not enough time with school and Discord API TOS changes (that didn't really effect the bot, but being young at the time I didn't know if it did or not).",
+      "images": [],
+      "links": {}
+    },
+    {
+      "title": "Homepage 98",
+      "year": "2018",
+      "featureImage": "/workAssets/homepage98.png",
+      "technologies": ["HTML", "CSS", "jQuery"],
+      "body": "Just a fun project I made to make an interactive Windows 98 style homepage. Featured interactive start menu, and draggability.",
+      "images": [],
+      "links": {}
+    },
+    {
+      "title": "whyisthis.fun",
+      "year": "2016-2018",
+      "featureImage": "/workAssets/whyisthisfun.jpg",
+      "technologies": ["HTML", "CSS", "jQuery", "Express"],
+      "body": "My first domain, a website that each day randomly picked a video from a list created by my friends for school. The website actually gained a bit of traction, reaching around 2k unique visitors a week. Eventually I forgot to renew the domain, and it was stolen by someone else.",
+      "images": [],
+      "links": {}
+    },
+    {
+      "title": "Project M",
+      "year": "2016-2017",
+      "featureImage": "/workAssets/projectm.png",
+      "technologies": ["HTML", "CSS", "jQuery", "Socket.io"],
+      "body": "A way for people to sync up their music with friends. Never finished it, and lost the code to it as it was on my first laptop that I threw out.",
+      "images": [],
+      "links": {}
+    }
+  ]
+}

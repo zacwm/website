@@ -32,6 +32,7 @@ export default {
   },
   computed: {
     elementPosition() {
+      if (!this.mouseY) console.dir(this.mouseY);
       return {
         top: this.mouseY * -0.15 + "px",
         left: this.mouseX * -0.15 + "px",
@@ -179,14 +180,17 @@ export default {
     animation-fill-mode: forwards;
   }
 
+  .contentbox p {
+    margin: 0;
+    line-height: 6.7rem;
+  }
+
   .afterText {
     font-size: 2rem;
     opacity: 0;
     animation-fill-mode: forwards;
-  }
-
-  .contentbox p {
-    margin: 0;
+    line-height: 3rem !important;
+    padding-top: 20px;
   }
 
   @media screen and (max-width: 768px) {

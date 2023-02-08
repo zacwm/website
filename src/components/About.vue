@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 export default {
   directives: {
     tooltip: {
@@ -22,7 +22,7 @@ export default {
     <table>
       <tr>
         <td>Frontend</td>
-        <td>HTML, CSS, JavaScript, <span v-tooltip="'This website is made in Vue!'">Vue.js</span>, React.js, jQuery, Bootstrap</td>
+        <td>HTML, CSS, JavaScript, TypeScript, <span v-tooltip="'This website is made in Vue!'">Vue.js</span>, React.js, jQuery, Bootstrap</td>
       </tr>
       <tr>
         <td>Backend</td>

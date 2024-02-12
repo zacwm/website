@@ -155,8 +155,6 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    transition: .5s ease-out;
-    transition-property: top, left;
   }
 
   .blurbox {

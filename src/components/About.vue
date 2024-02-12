@@ -36,7 +36,7 @@ export default {
         <td>Git, Linux, Bash, Nginx, C++, Java, Python</td>
       </tr>
     </table>
-    <p>I'm available for comissions, <a href="mailto:me@zachary.lol">contact me</a></p>
+    <p>I'm available for commissions, <a href="mailto:me@zachary.lol">contact me</a></p>
   </div>
 </template>
 
